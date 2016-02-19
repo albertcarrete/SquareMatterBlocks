@@ -1,0 +1,86 @@
+/* ==============================================================
+ ______     __         ______     ______     __  __     ______    
+/\  == \   /\ \       /\  __ \   /\  ___\   /\ \/ /    /\  ___\   
+\ \  __<   \ \ \____  \ \ \/\ \  \ \ \____  \ \  _"-.  \ \___  \  
+ \ \_____\  \ \_____\  \ \_____\  \ \_____\  \ \_\ \_\  \/\_____\ 
+  \/_____/   \/_____/   \/_____/   \/_____/   \/_/\/_/   \/_____/ 
+
+- Square Matter
+------------------------------------------------------------------
+
+A simple layout manager for websites.
+                                                                  	
+================================================================ */	
+
+.sm-pack{
+	position:relative;
+	width:100%;
+	box-sizing:border-box;
+}
+.sm-pack:after{
+	clear:both;
+	display:table;
+	content:" ";
+}
+.sm-pack.centered{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+@media (min-width: 550px) {
+
+	.align-mid{
+		vertical-align:middle;
+	}
+	.sm-grid-item{
+		float:left;
+	}
+
+	.sm-block{
+		float:left;
+	}
+	.sm-block.sm-cell{
+		display:table-cell;
+		float:none;
+	}
+	.sm-table{
+		display:table;
+		 table-layout:fixed;
+		 width:100%;
+		width:100%;
+	}
+	.sm-row{
+		display:table-row;
+	}
+
+	.one.sm-block		{ width: 8.33333333333%; }
+	.two.sm-block		{ width: 16.6666666666%; }
+	.three.sm-block		{ width: 24.9999999999%; }
+	.four.sm-block		{ width: 33.3333333332%; } // checked
+	.five.sm-block		{ width: 41.6666666665%; }
+	.six.sm-block		{ width: 50%;            }
+	.seven.sm-block		{ width: 58.3333333331%; }
+	.eight.sm-block		{ width: 66.6666666664%; } // checked
+	.nine.sm-block		{ width: 74.0%;          }
+	.ten.sm-block		{ width: 83.3333333333%; }
+	.eleven.sm-block	{ width: 91.3333333333%; }
+	.twelve.sm-block	{ width: 100%; }
+
+	.one-third.sm-block	{ width: 33.3333333333%; }
+	.two-thirds.sm-block{ width: 65.3333333333%; }
+
+	.one-half.sm-block	{ width: 50%; }
+	
+	.sm-one		{ width:8.33333333%; }
+	.sm-two		{ width:16.6666666%; }
+	.sm-three	{ width:24.9999999%; }
+	.sm-four	{ width:33.3333332%; }
+	.sm-five	{ width:41.66666665%; }
+	.sm-six		{ width:50%; }
+	.sm-seven	{ width:58.33333333%; }
+	.sm-eight	{ width:66.66666664%; }
+	.sm-nine	{ width:74.99999997%; }
+	.sm-ten		{ width:83.33333333% }
+	.sm-eleven	{ width:91.66666663%;}
+	.sm-twelve	{ width:100%; }
+}
