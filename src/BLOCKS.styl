@@ -30,7 +30,8 @@ A simple layout manager for websites.
 	display:table;
 	content:" ";
 }
-.sm-block{
+.sm-block
+.sm-static-block{
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -40,7 +41,10 @@ A simple layout manager for websites.
 	display:table-cell;
 	vertical-align:middle;
 }
-
+.sm-block.spacer,
+.sm-static-block.spacer{
+	padding:0 15px;
+}
 
 /* ------------------------------------
 used primarily to fill an entire page,
@@ -59,9 +63,7 @@ page web application
 .align-mid{
 	vertical-align:middle;
 }
-.sm-block.spacer{
-	padding:0 15px;
-}
+
 /*  Responsive Styles
 ======================================================= */
     
