@@ -20,12 +20,21 @@ A simple layout manager for websites.
 .sm-pack{
 	position:relative;
 	width:100%;
-	box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .sm-pack:after{
 	clear:both;
 	display:table;
 	content:" ";
+}
+.sm-block{
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;	
 }
 .sm-pack.centered{
 	display:table-cell;
